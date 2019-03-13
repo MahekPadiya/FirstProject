@@ -1,0 +1,94 @@
+/* div {
+  border-radius: 5px;
+  background-color: #161515;
+  padding: 20px;
+} */
+/* You can add global styles to this file, and also import other style files */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body{
+  margin: 0;
+
+  font-family: 'Abril Fatface';font-size: 22px;
+}
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+.list{
+  background-color:black;
+  color: white;
+  border-radius: 18%;
+width: 230px;
+height: 40px;} /* Blue */
+
+
+::placeholder{
+  color: grey;
+}
+.class-header{
+  color:whitesmoke;
+}
+.form-group:hover{
+  background-color: grey;
+}
+/* .navbar {
+  overflow: hidden;
+  background: rgba(138, 16, 185, 0.5);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 17px;
+} */
+/* 
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+ */
+/* 
+.icon-bar {
+  width: 5%;
+  position: relative;
+
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 25px;
+  transition: all 0.1s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+} */
+/*
+.active {
+
+} */

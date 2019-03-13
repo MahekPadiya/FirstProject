@@ -1,0 +1,112 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<div  class="form-group">
+    <div style="width: 18rem; background-color: rgba(0,0,0,0);color: seashell;  " >
+          <img class="card-img-top size" src="assets\image\logo.png" alt="Card img cap">           
+    </div>
+</div>
+
+
+<div style="text-align: center">
+  <div class="d-flex justify-content-center align-items-center container">
+    <div class="card bg-light" style="width: 25rem">
+      <div class="class-header">
+        <h1>Registration Form</h1>
+      </div>
+      <div class="card-body">
+        <div class="col-lg-14">
+          <div class="row-centered-form">
+            <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+              <input type="hidden" name="RegiId" #EmpId="ngModel" [(ngModel)]="userService.selectedUser.RegiId">
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <input type="text" class="form-control" placeholder="Name" name="name" #name="ngModel"
+                    [(ngModel)]="userService.selectedUser.name" required>
+                  <div class="alert alert-danger" *ngIf="name.invalid && name.touched">Name is Required
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <input type="text" class="form-control" placeholder="LastName" name="LastName" #LastName="ngModel"
+                    [(ngModel)]="userService.selectedUser.LastName" required>
+                  <div class="alert alert-danger" *ngIf="LastName.invalid && LastName.touched">LastName is Required
+                  </div>
+                </div>
+              </div> -->
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <input type="email" class="form-control" placeholder="Email" name="email" #email="ngModel"
+                    [(ngModel)]="userService.selectedUser.email" required>
+                  <div class="alert alert-danger" *ngIf="email.invalid && email.touched">Email is Required</div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <input type="radio" name="gender" value="Male" #gender="ngModel" 
+                    [(ngModel)]="userService.selectedUser.gender">Male
+                  <input type="radio" name="gender" value="Female" #gender="ngModel" style="margin-left: 70px;"
+                    [(ngModel)]="userService.selectedUser.gender">Female
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <input type="radio" name="role" value="Client" #role="ngModel"
+                    [(ngModel)]="userService.selectedUser.role">Client
+                  <input type="radio" name="role" value="Owner" #role="ngModel"  style="margin-left: 70px;"
+                    [(ngModel)]="userService.selectedUser.role">Owner
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <input type="password" class="form-control" placeholder="Password" minlength="8" name="password"
+                    #password="ngModel" [(ngModel)]="userService.selectedUser.password" required>
+                  <div class="alert alert-danger" *ngIf="password.invalid && (password.dirty || password.touched)">
+                    <div *ngIf="password.errors.required">
+                      Password is Required.
+                    </div>
+                    <div *ngIf="password.errors.minlength">
+                      Password contains at least 8 characters.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <input type="password" class="form-control" minlength="8" appConfirmEqualValidator="password"
+                    placeholder="ConfirmPassword" name="ConfirmPassword" #ConfirmPassword="ngModel"
+                    [(ngModel)]="userService.selectedUser.ConfirmPassword" required>
+                  <div class="alert alert-danger"
+                    *ngIf="ConfirmPassword.invalid && (ConfirmPassword.dirty || ConfirmPassword.touched)">
+                    <div *ngIf="ConfirmPassword.errors.required">
+                      ConfirmPassword is Required.
+                    </div>
+                    <div *ngIf="ConfirmPassword.errors.minlength">
+                      ConfirmPassword contains at least 8 characters.
+                    </div>
+                    <div class="alert aalert-danger"
+                      *ngIf="ConfirmPassword.errors.notEqual && !ConfirmPassword.errors.touched && !ConfirmPassword.errors.required">
+                      Password does not match.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <button type="submit" [disabled]="!userForm.valid"
+                    class="btn-color btn btn-block">Register</button>
+                </div>
+                <div class="col-md-12 form-group">
+                  <button type="button" class="btn btn-lg btn-block btn-secondary" routerLink="">Cancel</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

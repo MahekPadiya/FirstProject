@@ -1,0 +1,58 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<div  class="form-group">
+    <div style="width: 18rem; background-color: rgba(0,0,0,0);color: seashell;  " >
+          <img class="card-img-top size" src="assets\image\logo.png" alt="Card img cap">           
+    </div>
+</div>
+
+
+<div style="text-align: center">
+  <div class="d-flex justify-content-center align-items-center container">
+    <div class="card bg-light" style="width: 25rem">
+      <div class="class-header">
+        <h1>Login Form</h1>
+      </div>
+      <div class="card-body">
+        <div class="col-lg-14">
+          <div class="row-centered-form">
+            <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <input type="email" class="form-control" name="UserEmail" placeholder="Email" #UserEmail="ngModel" [(ngModel)]="userService.selectUser.UserEmail" required>
+                  <div class="alert alert-danger" *ngIf="UserEmail.invalid && UserEmail.touched">Email is Required</div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <input type="password" class="form-control" name="Password" placeholder="Password" minlength="8" #Password="ngModel" [(ngModel)]="userService.selectUser.Password" required>
+                  <div class="alert alert-danger" *ngIf="Password.invalid && (Password.dirty || Password.touched)">
+                    <div *ngIf="Password.errors.required">
+                      Password is Required.
+                    </div>
+                    <div *ngIf="Password.errors.minlength">
+                      Password contains at least 8 characters.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <button type="submit" [disabled]="!loginForm.valid"
+                    class="btn btn-lg btn-block btn-color">Login</button>
+                </div>
+                <div class="col-md-12 form-group">
+                  <button type="button" class="btn btn-lg btn-block btn-secondary" routerLink="register">Don't have Account? Register here.</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

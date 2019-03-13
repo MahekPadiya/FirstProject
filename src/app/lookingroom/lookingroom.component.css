@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body{
+  margin: 0;
+
+  font-family: 'Abril Fatface';font-size: 22px;
+}
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+.list{
+  background-color:black;
+  color: white;
+  border-radius: 18%;
+width: 230px;
+height: 40px;} /* Blue */
+
+
+::placeholder{
+  color: grey;
+}
+.class-header{
+  color:whitesmoke;
+}
+.form-group:hover{
+  background-color: rgb(164, 180, 206);
+}

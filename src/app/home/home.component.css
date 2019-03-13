@@ -1,0 +1,194 @@
+
+    .drop-box{
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    /* background-color: black;
+    border: solid 1px; */
+    color: #FF5959;
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px;
+    }
+
+    .drop-btn{
+    color: #FF5959;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background-color: #FF5959; */
+    /* border:  solid 1px black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .drop-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #FF5959; 
+    font-size: 19.97px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 240px;
+    }
+
+
+    .search{
+      top: 70px; 
+      right: 30px;
+      background-color: #FF5959;
+      border-radius: 20px;
+      height: 40px;
+      width: 100px;
+      color: white;
+    }
+    
+
+     .col-md{
+      box-sizing: border-box;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+     }
+
+    .col-md-4 {
+      -ms-flex-preferred-size: 33.33333333%;
+      flex-basis: 33.33333333%;
+      max-width: 33.33333333%;
+    }
+    
+    .col-md-8 {
+      -ms-flex-preferred-size: 66.66666667%;
+      flex-basis: 66.66666667%;
+      max-width: 66.66666667%;
+    }
+    
+    .col-md-12 {
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  /* background: black; */
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  
+ 
+
+}
+
+.navbar h1{
+  color: black;
+}
+.navbar a {
+   float: right;
+   border: black;
+  display: block;
+  color: black;
+  text-align: right;
+  padding : 10px 20px;
+  text-decoration: none;
+  font-size: 19.97px;
+  background-color: #FF5959;
+  border-radius: 20px;
+  
+  /* padding: 10px; */
+}
+
+.navbar a:hover {
+  /* background: #f1f1f1; */
+  color: black;
+  /* border: round black; */
+  border-radius: 20px;
+  border: 2px solid black;
+  /* padding: 10px; */
+  
+}
+
+
+
+.size{
+  width: 150px;
+  height: 80px;
+  margin: 10px, 20px, 10px, 0px;
+  margin-left: 30px
+}
+
+.col-md-11 {
+  -ms-flex-preferred-size: 91.50%;
+  flex-basis: 91.50%;
+  max-width: 91.50%;
+}
+
+
+.center-xs {
+  text-align: center;
+}
+
+
+.button2 {
+    background-color:white;
+    border-radius: 30px;
+    left: 35%;
+    
+  }
+  .button3 {
+    background-color: white;
+    border-radius: 30px;
+    left: 55%;
+  }
+
+  .button {
+
+    position: absolute;
+    top: 65%;
+    
+    transform: translate(-50%,-50%);
+    /* padding: 10px; */
+
+    border: none;
+    color: white;
+    background-color: #FF5959;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 23px 80px;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 100px;
+
+
+  }
+
+  button:focus,
+  select:focus {
+    outline: none;
+  }
+
+

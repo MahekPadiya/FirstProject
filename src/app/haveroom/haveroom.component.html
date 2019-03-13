@@ -1,0 +1,197 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+</head>
+
+<h1 style="color: #FF5959">I'm looking for a roommate to fill a spare room</h1>
+<h4>Advertising your empty room on Roomies.com is easy and free! Start by telling us a little about you, your property and the room…</h4>
+
+<!-- <body ng-app="myApp"> -->
+  <div ng-controller="registerCtrl">
+    <div style="text-align:center"></div>
+
+      <div class="card mx-auto"  style="width: 40rem;   margin-bottom: 20px; " >
+<!--
+        <div class="class-header" style="border-style: double;">
+          <h1>about the property</h1>
+        </div> -->
+
+        <div class="col-lg-12">
+          <div class="row-centered-form">
+            <form>
+              <div class="card-body">
+                  <h3 style="color: #FF5959">About the property…</h3>   
+                  <div class="form-group">
+                      
+                      <textarea placeholder="Address" rows="3" class="form-control"></textarea>
+                    </div>
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <select class="form-control">
+                            <option class="hidden" selected disabled>Type of property</option>
+                            <option>Apartment </option>
+                            <option>House</option>
+                            <option>Town house</option>
+                          </select>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <select class="form-control" ng-model="user.select-tech">
+                            <option class="hidden" selected disabled>Total badrooms</option>
+                            <option>2 rooms</option>
+                            <option>3 rooms</option>
+                            <option>4 rooms</option>
+                            <option>5+ rooms</option>
+                          </select>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-sm-12">
+                      <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <select class="form-control" >
+                                <option class="hidden" selected disabled>Total bathrooms</option>
+                                <option>1 bathroom </option>
+                                <option>2 bathoom</option>
+                                <option>3 bathroom</option>
+                                <option>4+ nathrooms</option>
+                              </select>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <select class="form-control" >
+                                <option class="hidden" selected disabled>Total roommates</option>
+                                <option>2 roommates</option>
+                                <option>3 roommates</option>
+                                <option>4 roommates</option>
+                                <option>5+ roommates</option>
+                              </select>
+                        </div>
+                      </div>
+                  </div>
+                      <div class="col-sm-12">
+                          <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <select class="form-control" >
+                                    <option class="hidden" selected disabled>Internet access</option>
+                                    <option>Included in rent </option>
+                                    <option>Available but not included in rent</option>
+                                    <option>Not Available</option>
+                                  </select>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <select class="form-control" >
+                                    <option class="hidden" selected disabled>Parking</option>
+                                    <option>No parking</option>
+                                    <option>Off-street parking</option>
+                                    <option>On-street parking</option>
+
+                                  </select>
+                            </div>
+
+   <!-- second part -->
+
+<h3 style="color: #FF5959">About the room…</h3>
+
+<div class="col-lg-12">
+    <div class="row-centered-form">
+      <form>
+        <div class="card-body">
+            <!-- <div class="form-group">
+                <textarea placeholder="Address" rows="3" class="form-control"></textarea>
+              </div> -->
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                  <!-- <select class="form-control" >
+                      <option class="hidden" selected disabled>Monthly rent</option>
+                      <option>Additional to the rent </option>
+                      <option>Included in the rent</option>
+                      <option>Some are included in the rent</option>
+                    </select> -->
+                    <input type="text" class="form-control" placeholder="Max budget">
+
+                    
+              </div>
+              <div class="col-sm-6 form-group">
+                  <select class="form-control" >
+                      <option class="hidden" selected disabled>Bills are</option>
+                      <option>Additional to the rent </option>
+                      <option>Included in the rent</option>
+                      <option>Some are included in the rent</option>
+
+                    </select>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-sm-6 form-group">
+                      <select class="form-control" >
+                          <option class="hidden" selected disabled>Security deposite</option>
+                          <option>No security deposite</option>
+                          <option>1 month rent</option>
+                          <option>1/2 month rent</option>>
+                        </select>
+                  </div>
+                  <div class="col-sm-6 form-group">
+                      <select class="form-control" >
+                          <option class="hidden" selected disabled>Room type</option>
+                          <option>Private room</option>
+                          <option>Room shared with other</option>
+                        </select>
+                  </div>
+                </div>
+            </div>
+                <div class="col-sm-12">
+                    <div class="row">
+                      <div class="col-sm-6 form-group">
+                          <select class="form-control" >
+                              <option class="hidden" selected disabled>Furnishings</option>
+                              <option>Furnished </option>
+                              <option>Unfurnshed</option>
+                              <option>Flexible with furnishing</option>
+                            </select>
+                      </div>
+                      <div class="col-sm-6 form-group">
+                          <select class="form-control" >
+                              <option class="hidden" selected disabled>Bathroom type</option>
+                              <option>Shared</option>
+                              <option>Own</option>
+                            </select>
+                      </div>
+                      <div class="col-sm-12">
+                          <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <select class="form-control" >
+                                    <option class="hidden" selected disabled>Preffered gender</option>
+                                    <option>Anyone welcome </option>
+                                    <option>Females</option>
+                                    <option>Males</option>
+                                    <option>Males & Females(no couples)</option>
+                                    <option>Couples</option>
+                                  </select>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input placeholder="available Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                                <!-- <select class="form-control" >
+                                    <option class="hidden" selected disabled>available from</option>
+                                    <option>shared</option>
+                                    <option>own</option>
+                                  </select> -->
+                            </div>
+
+                            <button class="button list" style="background-color: #FF5959; border-radius: 30px; width: 500px;"><i class="fa fa-users"></i><style white-space:pre></style>  create your free listing</button>
+
+ </div>
+  </div>
+  </div>
+<!-- 
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+  </div> -->
+
+  <!-- </body> -->
+  <router-outlet></router-outlet>
+<!--
+</body> -->
