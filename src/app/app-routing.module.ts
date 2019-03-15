@@ -47,9 +47,9 @@ const routes: Routes = [
      component: AdminComponent
    },
    {
-     path: 'owner-dashboard',
-     component: OwnerDashboardComponent
-   }
+    path: 'login/owner-dashboard',
+    component: OwnerDashboardComponent
+  },
 ];
 
 @NgModule({
