@@ -5,9 +5,9 @@ import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
-import { HaveroomComponent } from './haveroom/haveroom.component'
-import { OwnerDashboardComponent } from './owner-dashboard/owner-dashboard.component';
+import { HaveroomComponent } from './haveroom/haveroom.component';
 import { AdminComponent } from './admin/admin.component';
+import { OwnerDashboardComponent } from './owner-dashboard/owner-dashboard.component';
 
 
 import { from } from 'rxjs';
@@ -42,15 +42,14 @@ const routes: Routes = [
     path: 'lookingroom',
     component: LookingroomComponent
    },
-  // {
-  //   path: 'owner-dashboard',
-  //   component: OwnerDashboardComponent
-  // },
-  // {
-  //   path: 'admin',
-  //   component: AdminComponent
-  // }
-
+   {
+     path: 'admin',
+     component: AdminComponent
+   },
+   {
+     path: 'owner-dashboard',
+     component: OwnerDashboardComponent
+   }
 ];
 
 @NgModule({

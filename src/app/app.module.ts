@@ -13,6 +13,8 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HaveroomComponent } from './haveroom/haveroom.component';
 import { LookingroomComponent } from './lookingroom/lookingroom.component';
+import { AdminComponent } from './admin/admin.component';
+import { OwnerDashboardComponent } from './owner-dashboard/owner-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { LookingroomComponent } from './lookingroom/lookingroom.component';
     ConfirmEqualValidatorDirective,
     DashboardComponent,
     HaveroomComponent,
-    LookingroomComponent
+    LookingroomComponent,
+    AdminComponent,
+    OwnerDashboardComponent
   ],
   imports: [
     BrowserModule,
