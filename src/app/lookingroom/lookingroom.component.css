@@ -22,8 +22,8 @@ body{
   background-color:black;
   color: white;
   border-radius: 18%;
-width: 230px;
-height: 40px;} /* Blue */
+  width: 230px;
+  height: 40px;} /* Blue */
 
 
 ::placeholder{
@@ -35,6 +35,7 @@ height: 40px;} /* Blue */
 .form-group:hover{
   background-color: rgb(164, 180, 206);
 }
+
 
 .font{
   font-family: cursive;
