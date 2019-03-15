@@ -35,3 +35,7 @@ height: 40px;} /* Blue */
 .form-group:hover{
   background-color: rgb(164, 180, 206);
 }
+
+.font{
+  font-family: cursive;
+}
