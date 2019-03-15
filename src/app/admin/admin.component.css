@@ -1,0 +1,115 @@
+
+    .drop-box{
+      top: 65%;
+      left: 5%;
+      border:none;
+      color: #FF5959;
+      height: 22px;
+      border-radius: 40px;
+      border-bottom-color: #FF5959;
+      padding: 10px;
+      }
+      .drop-btn{
+      border-bottom-color: #FF5959;
+      color: #FF5959;
+      float: right;
+      width: 25px;
+      height: 30px;
+      border-radius: 50%;
+      /* background-color: #FF5959; */
+      /* border:  solid 1px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+      .drop-txt{
+      border-bottom-color: #FF5959;
+      background: none;
+      /* outline: none; */
+      float: left;
+      padding: 0;
+      color: #FF5959;
+      font-size: 19.97px;
+      transition: 0.4s;
+      line-height: 30px;
+      width: 240px;
+      }
+      .col-md{
+        box-sizing: border-box;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+       }
+      .col-md-4 {
+        -ms-flex-preferred-size: 33.33333333%;
+        flex-basis: 33.33333333%;
+        max-width: 33.33333333%;
+      }
+      .col-md-8 {
+        -ms-flex-preferred-size: 66.66666667%;
+        flex-basis: 66.66666667%;
+        max-width: 66.66666667%;
+      }
+      .col-md-12 {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+  /* You can add global styles to this file, and also import other style files */
+  /* You can add global styles to this file, and also import other style files */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .navbar {
+    overflow: hidden;
+    /* background: black; */
+    position: fixed;
+    width: 100%;
+    background-color:rgba(192,192,192,192);
+    /* border:  solid 1px; */
+    /* top: 10px; */
+  }
+  .navbar h1{
+    color: black;
+  }
+  .navbar a {
+    float: right;
+    border: black;
+    display: block;
+    color: black;
+    text-align: right;
+    padding : 10px 20px;
+    text-decoration: none;
+    font-size: 19.97px;
+    background-color: #FF5959;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .navbar a:hover {
+    /* background: #f1f1f1; */
+    color: black;
+    /* border: round black; */
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 10px;
+  }
+  .size{
+    width: 150px;
+    height: 80px;
+    margin: 10px, 20px, 10px, 0px;
+    margin-left: 30px
+  }
+  .col-md-11 {
+    -ms-flex-preferred-size: 91.50%;
+    flex-basis: 91.50%;
+    max-width: 91.50%;
+  }
+
