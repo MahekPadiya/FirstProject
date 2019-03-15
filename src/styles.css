@@ -3,3 +3,18 @@
   background-repeat: no-repeat;
   background-size: 100%;
   } */
+
+  /* .body{
+    background-image: url("/src/assets/image/10.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   } */
+
+
+   body{
+    background: url("back.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   }
