@@ -10,11 +10,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
   import { from } from 'rxjs';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
 import { HaveroomComponent } from './haveroom/haveroom.component';
 import { LookingroomComponent } from './lookingroom/lookingroom.component';
 import { AdminComponent } from './admin/admin.component';
 import { OwnerDashboardComponent } from './owner-dashboard/owner-dashboard.component';
+import { PropertyListComponent } from './property-list/property-list.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +24,12 @@ import { OwnerDashboardComponent } from './owner-dashboard/owner-dashboard.compo
     LoginComponent,
     RegisterComponent,
     ConfirmEqualValidatorDirective,
-    DashboardComponent,
+
     HaveroomComponent,
     LookingroomComponent,
     AdminComponent,
-    OwnerDashboardComponent
+    OwnerDashboardComponent,
+    PropertyListComponent
   ],
   imports: [
     BrowserModule,

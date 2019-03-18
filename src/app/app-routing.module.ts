@@ -1,5 +1,5 @@
 import { LookingroomComponent } from './lookingroom/lookingroom.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { HaveroomComponent } from './haveroom/haveroom.component';
 import { AdminComponent } from './admin/admin.component';
 import { OwnerDashboardComponent } from './owner-dashboard/owner-dashboard.component';
+import { PropertyListComponent } from './property-list/property-list.component';
 
 
 import { from } from 'rxjs';
@@ -29,10 +30,6 @@ const routes: Routes = [
   {
     path: 'login/register',
     component: RegisterComponent
-  },
-  {
-    path: 'login/dashboard',
-    component: DashboardComponent
   },
   {
     path: 'haveroom',
